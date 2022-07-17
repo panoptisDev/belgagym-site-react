@@ -1,0 +1,90 @@
+/*import styles */
+@import url("./styles/navbar.css");
+@import url("./styles/home.css");
+@import url("./styles/Class.css");
+@import url("./styles/schedule.css");
+@import url("./styles/Contact.css");
+@import url("./styles/footer.css");
+@import url("./styles/slider.css");
+@import url("./styles/about.css");
+
+/* /*---------------------------------------
+     GENERAL               
+  -----------------------------------------*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--link-color);
+  font-weight: normal;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: var(--primary-color);
+  outline: none;
+  text-decoration: none;
+}
+
+/* BG OVERLAY */
+
+.bg-overlay {
+  background: var(--dark-color);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.85;
+}
+
+/* TEAM INFO */
+.team-info {
+  background: #070707;
+  border-radius: 0 0 2px 2px;
+  box-shadow: 6px 0 38px rgb(20 20 20 / 10%);
+  padding: 20px;
+  position: relative;
+}
+
+.pb-2,
+.py-2 {
+  color: gray;
+  padding-bottom: 0.5rem !important;
+}
+
+a {
+  cursor: pointer;
+}
+
+.active {
+  color: var(--primary-color) !important;
+}
+
+.mt-3,
+.my-3 {
+  color: rgb(219, 252, 252);
+}
+
+th {
+  align-items: center;
+}
+
+.team-thumb:hover {
+  padding: 30px;
+}

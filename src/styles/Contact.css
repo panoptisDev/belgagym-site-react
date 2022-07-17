@@ -1,0 +1,47 @@
+.webform input,
+button#submit-button {
+  height: calc(2.25rem + 20px);
+}
+
+.form-control {
+  border-radius: var(--border-radius-small);
+  margin: 1.3rem 0;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--dark-color);
+}
+
+button#submit-button {
+  background: var(--primary-color);
+  border-color: transparent;
+  color: var(--white-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button#submit-button:hover {
+  background: white;
+  color: var(--primary-color);
+}
+
+.contact h2 + p {
+  max-width: 90%;
+}
+
+.google-map {
+  border-top: 1px solid #efebeb;
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+}
+
+.google-map iframe {
+  width: 100%;
+}
+
+.mb-4,
+.my-4 {
+  color: gray;
+  margin-bottom: 1.5rem !important;
+}

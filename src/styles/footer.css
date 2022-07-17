@@ -1,0 +1,18 @@
+.site-footer {
+  padding: 4rem 0;
+}
+
+.site-footer a {
+  color: white;
+  font-weight: var(--font-weight-light);
+}
+
+.site-footer p {
+  color: white;
+  font-size: var(--base-font-size);
+}
+
+.contact .fa,
+.site-footer .fa {
+  color: var(--primary-color);
+}

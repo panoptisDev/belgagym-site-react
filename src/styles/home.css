@@ -1,0 +1,11 @@
+.hero {
+  overflow: hidden;
+  background-image: url("../../public/imgs/im4.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  min-height: 100vh;
+  position: relative;
+  background-attachment: fixed;
+}
