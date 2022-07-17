@@ -8,25 +8,12 @@ function Features() {
           <Fade top>
             <div className="d-flex flex-column justify-content-center ml-lg-auto mr-lg-5 col-lg-5 col-md-6 col-12">
               <h2 className="mb-3 text-white" data-aos="fade-up">
-                New to the gymso?
+                New to the Belgaform?
               </h2>
 
               <h6 className="mb-4 text-white" data-aos="fade-up">
-                Your membership is up to 2 months FREE ($62.50 per month)
+                join us now
               </h6>
-
-              <p data-aos="fade-up" data-aos-delay="200">
-                Gymso is free HTML template by{" "}
-                <a
-                  rel="nofollow"
-                  href="https://www.tooplate.com"
-                  target="_parent"
-                >
-                  Tooplate
-                </a>{" "}
-                for your commercial website. Bootstrap v4.2.1 Layout. Feel free
-                to use it.
-              </p>
 
               <a
                 href="#"

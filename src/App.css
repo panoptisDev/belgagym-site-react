@@ -88,3 +88,32 @@ th {
 .team-thumb:hover {
   padding: 30px;
 }
+
+.heading-section {
+  font-size: 28px;
+  color: aliceblue;
+}
+.img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.owl-carousel .owl-dots {
+  text-align: left;
+  margin-top: 10px;
+}
+.owl-carousel .owl-dots .owl-dot {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  background: #fff;
+  position: relative;
+}
+.owl-carousel .owl-dots .owl-dot:hover,
+.owl-carousel .owl-dots .owl-dot:focus {
+  outline: none !important;
+}
+.owl-carousel .owl-dots .owl-dot.active {
+  background: #007bff;
+}
