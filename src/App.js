@@ -6,7 +6,7 @@ import Contact from "./components/Contact";
 import Schedule from "./components/Schedule";
 import Footer from "./components/Footer";
 import ClasseRec from "./components/ClasseRec";
-
+import MySlider from "./components/slider";
 import "./App.css";
 
 const img1 = "./imgs/trainera.png";
@@ -26,7 +26,7 @@ function App() {
       <Home mouse={() => handelClick(0)} />
       <Features />
       <About img1={img1} img2={img2} mouse={() => handelClick(1)} />
-      <ClasseRec mouse={() => handelClick(2)} />
+      <MySlider mouse={() => handelClick(2)} />
       <Schedule mouse={() => handelClick(3)} />
       <Contact mouse={() => handelClick(4)} />
       <Footer />

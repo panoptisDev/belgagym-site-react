@@ -1,14 +1,12 @@
 import Fade from "react-reveal/Fade";
 import ImgSlider from "./ImgSlider";
-const SalleImg1 = "./imgs/a.png";
+
 const SalleImg2 = "./imgs/im1.png";
 const SalleImg3 = "./imgs/im2.png";
 const SalleImg4 = "./imgs/im3.png";
 const SalleImg5 = "./imgs/im4.png";
 const SalleImg6 = "./imgs/IMG5-.png";
-const SalleImg7 = "./imgs/belga.png";
-const SalleImg8 = "./imgs/c.png";
-const SalleImg9 = "./imgs/b.png";
+
 function About({ img1, img2, mouse }) {
   return (
     <section className="about section" id="about" onMouseEnter={mouse}>
@@ -145,32 +143,35 @@ function About({ img1, img2, mouse }) {
             </div>
           </div>
         </Fade>
-
-        <div className="row about2">
-          <div className="col-lg-6">
-            <ImgSlider
-              img2={SalleImg2}
-              img3={SalleImg3}
-              img1={SalleImg6}
-              img4={SalleImg4}
-              img5={SalleImg5}
-              img6={SalleImg6}
-            />
-          </div>
-          <div
-            className="col-lg-4"
-            style={{ marginLeft: "2rem", marginTop: "-29px" }}
-          >
-            <h1 className="heading-section">Notre club </h1>
-            <p>
-              te propose tous les haltères et toutes les machines pour passer du
-              mini au maxi effort. Que tu choisisses de te muscler plus
-              spécifiquement les fessiers, les quadriceps, les dorsaux ou les
-              abdos… nos machines guidées sont à ta disposition, ainsi que la
-              zone de poids libre. Tu l’as bien compris, ici tu peux te muscler
-              comme tu veux et aussi où tu veux.{" "}
-            </p>
-          </div>
+      </div>
+      <div
+        className="container  about2"
+        style={{
+          display: "flex",
+          justifyContent: "space-evenly",
+          flexWrap: "wrap",
+        }}
+      >
+        <div className="col">
+          <ImgSlider
+            img2={SalleImg2}
+            img3={SalleImg3}
+            img4={SalleImg4}
+            img5={SalleImg5}
+            im6={SalleImg6}
+            im7={SalleImg2}
+          />
+        </div>
+        <div className="col" style={{ marginLeft: "2rem", marginTop: "-29px" }}>
+          <h1 className="heading-section">Notre club </h1>
+          <p>
+            te propose tous les haltères et toutes les machines pour passer du
+            mini au maxi effort. Que tu choisisses de te muscler plus
+            spécifiquement les fessiers, les quadriceps, les dorsaux ou les
+            abdos… nos machines guidées sont à ta disposition, ainsi que la zone
+            de poids libre. Tu l’as bien compris, ici tu peux te muscler comme
+            tu veux et aussi où tu veux.{" "}
+          </p>
         </div>
       </div>
     </section>

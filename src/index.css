@@ -27,3 +27,7 @@
   --border-radius-large: 100%;
   --border-radius-small: 2px;
 }
+
+.slick-track {
+  width: 0;
+}

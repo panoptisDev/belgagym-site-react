@@ -1,10 +1,3 @@
-.ion-ios-arrow-forward {
-  color: aliceblue;
-}
-.ion-ios-arrow-back {
-  color: aliceblue;
-}
-
 .work {
   width: 100%;
 }
@@ -100,51 +93,16 @@
   display: inline-block;
   margin-bottom: 5px;
 }
-.owl-carousel .owl-nav .owl-next {
-  right: 0;
-}
-.owl-carousel .owl-nav .owl-prev {
-  right: 0;
-  margin-right: 20px;
-}
-.owl-carousel .owl-nav {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-button:not(:disabled),
-[type="button"]:not(:disabled),
-[type="reset"]:not(:disabled),
-[type="submit"]:not(:disabled) {
-  cursor: pointer;
+
+.slick-dots li button:before {
+  color: #eedfdf;
 }
 
-[type="button"],
-[type="reset"],
-[type="submit"],
-button {
-  -webkit-appearance: button;
+.slick-dots li.slick-active button:before {
+  color: rgb(255, 255, 255);
 }
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
-.owl-prev :hover,
-.owl-next :hover {
-  color: #008fff;
-}
-.owl-carousel .owl-nav .owl-prev,
-.owl-carousel .owl-nav .owl-next {
-  position: absolute;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  margin-top: -10px;
-  color: rgba(0, 0, 0, 0.2) !important;
-  -webkit-transition: 0.7s;
-  -o-transition: 0.7s;
-  transition: 0.7s;
-  opacity: 1;
+
+.slick-slide div {
+  margin-left: 10px;
+  margin-right: 10px;
 }
