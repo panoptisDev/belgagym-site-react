@@ -29,7 +29,7 @@ function App() {
   //page loader
 
   useEffect(() => {
-    let timer = setTimeout(() => setLoaded(true), 5000);
+    let timer = setTimeout(() => setLoaded(true), 4000);
     return () => {
       clearTimeout(timer);
     };
@@ -48,7 +48,7 @@ function App() {
           <MySlider mouse={() => handelClick(2)} />
           <Schedule mouse={() => handelClick(3)} />
           <Contact mouse={() => handelClick(4)} />
-          <Footer />{" "}
+          <Footer />
         </>
       )}
     </>

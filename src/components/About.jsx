@@ -1,5 +1,6 @@
 import Fade from "react-reveal/Fade";
 import ImgSlider from "./ImgSlider";
+import $ from "jquery";
 
 const SalleImg2 = "./imgs/im1.png";
 const SalleImg3 = "./imgs/im2.png";
@@ -8,6 +9,36 @@ const SalleImg5 = "./imgs/im4.png";
 const SalleImg6 = "./imgs/unnamed.png";
 
 function About({ img1, img2, mouse }) {
+  function handelClick(e) {
+    //variables
+    let isShowing = false;
+    var zindex = 10;
+
+    //default
+    e.preventDefault();
+
+    let currentCard = e.target.parentNode.parentNode;
+    if (currentCard.classList.contains("card-title")) {
+      currentCard = currentCard.parentNode;
+    }
+    if (currentCard.classList.contains("mycard")) {
+      if (currentCard.classList.contains("show")) {
+        isShowing = true;
+      }
+      const cards = document.querySelector(".cards");
+      if (cards.classList.contains("showing")) {
+        document.querySelector(".show").classList.remove("show");
+        if (isShowing) {
+          cards.classList.remove("showing");
+        } else {
+          currentCard.classList.add("show");
+        }
+      } else {
+        cards.classList.add("showing");
+        currentCard.classList.add("show");
+      }
+    }
+  }
   return (
     <section className="about section" id="about" onMouseEnter={mouse}>
       <div className="container-fluid">
@@ -36,7 +67,7 @@ function About({ img1, img2, mouse }) {
         </div>
         <Fade right>
           <div className="cards container-fluid">
-            <div className="mycard">
+            <div className="mycard" onClick={(e) => handelClick(e)}>
               <div className="card__image-holder">
                 <img
                   className="card__image"
@@ -45,10 +76,10 @@ function About({ img1, img2, mouse }) {
                 />
               </div>
               <div className="card-title">
-                <a href="#" className="toggle-info sliderbtn">
+                <div className="toggle-info sliderbtn">
                   <span className="left"></span>
                   <span className="right"></span>
-                </a>
+                </div>
                 <h2>
                   Coach
                   <small>motqrine khadija</small>
@@ -62,7 +93,7 @@ function About({ img1, img2, mouse }) {
               </div>
             </div>
 
-            <div className="mycard ">
+            <div className="mycard " onClick={(e) => handelClick(e)}>
               <div className="card__image-holder">
                 <img
                   className="card__image"
@@ -71,10 +102,10 @@ function About({ img1, img2, mouse }) {
                 />
               </div>
               <div className="card-title">
-                <a href="#" className="toggle-info sliderbtn">
+                <div className="toggle-info sliderbtn">
                   <span className="left"></span>
                   <span className="right"></span>
-                </a>
+                </div>
                 <h2>
                   Coach
                   <small>belmadani youssef</small>
@@ -89,7 +120,7 @@ function About({ img1, img2, mouse }) {
               </div>
             </div>
 
-            <div className="mycard ">
+            <div className="mycard " onClick={(e) => handelClick(e)}>
               <div className="card__image-holder">
                 <img
                   className="card__image"
@@ -98,10 +129,10 @@ function About({ img1, img2, mouse }) {
                 />
               </div>
               <div className="card-title">
-                <a href="#" className="toggle-info sliderbtn">
+                <div className="toggle-info sliderbtn">
                   <span className="left"></span>
                   <span className="right"></span>
-                </a>
+                </div>
                 <h2>
                   Coach
                   <small>El Alami hamza</small>
@@ -115,7 +146,7 @@ function About({ img1, img2, mouse }) {
                 </div>
               </div>
             </div>
-            <div className="mycard ">
+            <div className="mycard " onClick={(e) => handelClick(e)}>
               <div className="card__image-holder">
                 <img
                   className="card__image"
@@ -124,10 +155,10 @@ function About({ img1, img2, mouse }) {
                 />
               </div>
               <div className="card-title">
-                <a href="#" className="toggle-info sliderbtn">
+                <div className="toggle-info sliderbtn">
                   <span className="left"></span>
                   <span className="right"></span>
-                </a>
+                </div>
                 <h2>
                   Coach
                   <small>Yassif Zaid</small>
