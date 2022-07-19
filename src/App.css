@@ -117,3 +117,11 @@ th {
 .owl-carousel .owl-dots .owl-dot.active {
   background: #007bff;
 }
+
+/*LOADER */
+.loader {
+  width: 100%;
+  height: 100%;
+  text-align: -webkit-center;
+  margin-top: 13rem;
+}

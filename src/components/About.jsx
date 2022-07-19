@@ -5,7 +5,7 @@ const SalleImg2 = "./imgs/im1.png";
 const SalleImg3 = "./imgs/im2.png";
 const SalleImg4 = "./imgs/im3.png";
 const SalleImg5 = "./imgs/im4.png";
-const SalleImg6 = "./imgs/IMG5-.png";
+const SalleImg6 = "./imgs/unnamed.png";
 
 function About({ img1, img2, mouse }) {
   return (

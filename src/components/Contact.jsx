@@ -24,7 +24,7 @@ function Contact({ mouse }) {
 
               <form
                 action="#"
-                method="post"
+                // method="post"
                 className="contact-form webform"
                 data-aos="fade-up"
                 data-aos-delay="400"
