@@ -1,5 +1,5 @@
 body {
-  background: #171819;
+  background: #0d0d0d;
   font-family: var(--base-font-family);
 }
 
@@ -55,10 +55,11 @@ h6 {
 }
 
 p {
-  color: var(--p-color);
+  color: #a2a3a3;
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-light);
   line-height: 1.5em;
+  font-family: "FontAwesome";
 }
 
 b,

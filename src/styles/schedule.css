@@ -58,6 +58,10 @@
 .table th {
   padding: 1rem;
 }
+.day {
+  display: none;
+  color: #11d7f1;
+}
 
 @media all and (max-width: 767px) {
   .table {
@@ -66,6 +70,9 @@
   }
   .table th {
     display: none;
+  }
+  .day {
+    display: block;
   }
   .table tbody tr {
     display: block;

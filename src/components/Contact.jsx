@@ -1,10 +1,73 @@
 import Fade from "react-reveal/Fade";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { GooeyCircleLoader } from "react-loaders-kit";
+
+// import { SMTPClient } from "emailjs";
+
+// const client = new SMTPClient({
+//   user: "lahoucine el addali",
+//   password: "password",
+//   host: "smtp.lahoucineeladdali@gmail.com",
+//   ssl: true,
+// });
+
+const initialState = {
+  name: "",
+  phoneNumber: "",
+  email: "",
+  message: "",
+};
+
 function Contact({ mouse }) {
+  const form = useRef();
+  const isSuccess = true;
+  const loaderProps = {
+    loading: true,
+    size: 150,
+    duration: 3,
+    colors: ["#0066b7", "#0066b7", "#0066b7"],
+  };
+
+  const handelChange = (e) => {
+    // setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const sendEmail = (e) => {
+    document.querySelector(".Loader-form").style.display = "block";
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_4hsvs2q",
+        "template_e2j0bku",
+        form.current,
+        "z8AOe7wXokvj3NOG6"
+      )
+      .then(
+        (result) => {
+          //
+          document.querySelector(".Loader-form").style.display = "none";
+          document.querySelector(".alert-success").style.display = "block";
+
+          setTimeout(() => {
+            window.location.reload();
+          }, 4000);
+        },
+        (error) => {
+          isSuccess = false;
+          document.querySelector(".alert-success").style.display = "block";
+          console.log("error: " + error);
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <section
       className="contact section"
       id="contact"
-      style={{ backgroundColor: "#000" }}
+      style={{}}
       onMouseEnter={mouse}
     >
       <div className="container">
@@ -23,32 +86,58 @@ function Contact({ mouse }) {
               </h2>
 
               <form
-                action="#"
-                // method="post"
                 className="contact-form webform"
                 data-aos="fade-up"
                 data-aos-delay="400"
                 role="form"
+                ref={form}
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  console.log(form);
+                  sendEmail(e);
+                }}
               >
                 <input
                   type="text"
                   className="form-control"
-                  name="cf-name"
+                  name="name"
                   placeholder="Nom"
+                  required
+                  onChange={(e) => {
+                    handelChange(e);
+                  }}
+                />
+                <input
+                  type="text"
+                  className="form-control"
+                  name="phoneNumber"
+                  placeholder="Numéro de téléphone"
+                  required
+                  onChange={(e) => {
+                    handelChange(e);
+                  }}
                 />
 
                 <input
                   type="email"
                   className="form-control"
-                  name="cf-email"
+                  name="email"
                   placeholder="Email"
+                  required
+                  onChange={(e) => {
+                    handelChange(e);
+                  }}
                 />
 
                 <textarea
                   className="form-control"
                   rows="5"
-                  name="cf-message"
+                  name="message"
                   placeholder="Message"
+                  required
+                  onChange={(e) => {
+                    handelChange(e);
+                  }}
                 ></textarea>
 
                 <button
@@ -59,6 +148,32 @@ function Contact({ mouse }) {
                 >
                   Envoyer
                 </button>
+                <div
+                  className="alert alert-success alert-dismissible fade show"
+                  role="alert"
+                  style={{
+                    position: "absolute",
+                    zIndex: "1",
+                    marginTop: "-343px",
+                    display: "none",
+                  }}
+                >
+                  <strong>{isSuccess ? "Message Envoyé" : "Error !!!"} </strong>{" "}
+                  {isSuccess
+                    ? "merci d'avoir nous contacté nous vous répondrons dans les plus brefs délais"
+                    : "fiald"}
+                  <button
+                    type="button"
+                    className="close"
+                    data-dismiss="alert"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div className="Loader-form">
+                  <GooeyCircleLoader {...loaderProps} />
+                </div>
               </form>
             </div>
           </Fade>
@@ -85,9 +200,9 @@ function Contact({ mouse }) {
                 data-aos-delay="900"
               >
                 <iframe
-                  src="https://maps.google.com/maps?q=Salle+de+sport+Belgaforme/@33.9972341,-6.7438413,16.58z/data=!4m9!1m2!2m1!1sAv.+Moulay+Youssef,+Salé,AL+JADIDA+Maroc+madinat!3m5!1s0xda74024e3aedc17:0x514401bcdd4f7982!8m2!3d33.9990141!4d-6.7404551!15sCjFBdi4gTW91bGF5IFlvdXNzZWYsIFNhbMOpLEFMIEpBRElEQSBNYXJvYyBtYWRpbmF0kgEOc3BvcnRzX2NvbXBsZXg?hl=fr-FR%20&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                  width="1920"
-                  height="250"
+                  src="https://maps.google.com/maps?q=%20avenue%20Moulay%20Youssef%20-%20cit%C3%A9%20royale%20SALA%20AL%20JADIDA,%20Sal%C3%A9,%20Morocco&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  width="1970"
+                  height="310"
                   frameBorder="0"
                   style={{ border: "0" }}
                   allowFullScreen=""

@@ -1,0 +1,101 @@
+.thumbnail__logo,
+.thumbnail__content,
+.thumbnail__links {
+  position: relative;
+  z-index: 2;
+}
+
+.thumbnail__logo {
+  align-self: flex-start;
+}
+
+.logo__shape {
+  fill: #fff;
+}
+
+.logo__text {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  vertical-align: bottom;
+  color: #fff;
+  margin-left: -12px;
+}
+
+.heading--primary {
+  font-size: 1.999rem;
+}
+
+.heading--secondary {
+  font-size: 1.414rem;
+}
+
+.thumbnail__links {
+  align-self: flex-end;
+  width: 100%;
+}
+
+.thumbnail__links a {
+  font-size: 2rem;
+  color: #fff;
+}
+.thumbnail__links a:focus,
+.thumbnail__links a:hover {
+  color: rgb(14, 150, 255);
+}
+
+label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #e0e0e0;
+  font-family: emoji;
+  font-weight: bold;
+  margin-bottom: -1.5rem !important;
+}
+
+.form-control2 {
+  font-size: 16px;
+  font-weight: normal;
+  background: rgb(255 255 255 / 7%);
+  margin: 12.5px 0;
+  height: 68px;
+  border: none;
+  padding: 0 30px;
+  border-radius: 10px;
+  color: #fff;
+}
+.form-control:focus {
+  background-color: #c2c2c2;
+}
+
+.btn--form {
+  padding: 0.5rem 2.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--primary-color);
+  border-radius: 2.1875rem;
+}
+.btn--form:focus,
+.btn--form:hover {
+  background: #ffffff;
+}
+
+.signup__link {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+}
+.signup__link:focus,
+.signup__link:hover {
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 990px) {
+  .list-inline {
+    margin-top: 7rem !important
+        ;
+  }
+}

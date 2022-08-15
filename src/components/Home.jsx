@@ -22,18 +22,20 @@ function Home({ mouse }) {
                   className="text-white"
                   data-aos="fade-up"
                   data-aos-delay="500"
+                  style={{ fontFamily: "serif" }}
                 >
-                  chez BELGAFORM <br />
+                  chez BELGAFORM
                 </h1>
                 <h2
                   className="text-white"
                   data-aos="fade-up"
                   data-aos-delay="500"
+                  style={{ fontFamily: "monospace" }}
                 >
                   <ReactRotatingText
                     items={[
-                      "Améliorez votre corps ",
-                      "Deviens enfin la meilleure version de toi même ",
+                      "Améliorez votre corps",
+                      "Deviens enfin la meilleure version de toi même",
                       "Où un athlète devient champion",
                     ]}
                   />

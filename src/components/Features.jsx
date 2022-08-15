@@ -8,22 +8,19 @@ function Features() {
           <Fade top>
             <div className="d-flex flex-column justify-content-center ml-lg-auto mr-lg-5 col-lg-5 col-md-6 col-12">
               <h2 className="mb-3 text-white" data-aos="fade-up">
-                New to the Belgaform?
+                Nouveau à Belgaform ?
               </h2>
 
               <h6 className="mb-4 text-white" data-aos="fade-up">
-                join us now
+                Rejoignez nous maintenant
               </h6>
 
               <a
-                href="#"
+                href="/register"
                 className="btn custom-btn bg-color mt-3"
                 data-aos="fade-up"
-                data-aos-delay="300"
-                data-toggle="modal"
-                data-target="#membershipForm"
               >
-                Become a member today
+                Devenez membre aujourd'hui
               </a>
             </div>
           </Fade>

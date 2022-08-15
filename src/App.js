@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 //
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
@@ -7,15 +8,11 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Schedule from "./components/Schedule";
 import Footer from "./components/Footer";
-import ClasseRec from "./components/ClasseRec";
-import MySlider from "./components/slider";
+import Classes from "./components/Classes";
 import Loader from "./components/Loader";
+import Register from "./components/Register";
 
 import "./App.css";
-
-const img1 = "./imgs/trainera.png";
-
-const img2 = "./imgs/trainerb.png";
 
 function App() {
   let [loaded, setLoaded] = useState(false);
@@ -37,20 +34,51 @@ function App() {
   //
   return (
     <>
-      {!loaded ? (
-        <Loader />
-      ) : (
-        <>
-          <NavBar />
-          <Home mouse={() => handelClick(0)} />
-          <Features />
-          <About img1={img1} img2={img2} mouse={() => handelClick(1)} />
-          <MySlider mouse={() => handelClick(2)} />
-          <Schedule mouse={() => handelClick(3)} />
-          <Contact mouse={() => handelClick(4)} />
-          <Footer />
-        </>
-      )}
+      <Router>
+        <Routes>
+          <Route
+            path="/"
+            exact
+            element={
+              <>
+                {!loaded ? (
+                  <Loader />
+                ) : (
+                  <>
+                    <NavBar isRegister={false} />
+                    <Home mouse={() => handelClick(0)} />
+                    <Features />
+                    <About mouse={() => handelClick(1)} />
+                    <Classes mouse={() => handelClick(2)} />
+                    <Schedule mouse={() => handelClick(3)} />
+                    <Contact mouse={() => handelClick(4)} />
+
+                    <Footer />
+                  </>
+                )}
+              </>
+            }
+          />
+          <Route
+            path="/register"
+            element={
+              <>
+                <>
+                  {!loaded ? (
+                    <Loader />
+                  ) : (
+                    <>
+                      <NavBar isRegister={true} />
+                      <Register />
+                      <Footer isRegister={true} />
+                    </>
+                  )}
+                </>
+              </>
+            }
+          />
+        </Routes>
+      </Router>
     </>
   );
 }

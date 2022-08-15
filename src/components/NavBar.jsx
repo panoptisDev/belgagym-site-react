@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
-function NavBar() {
+function NavBar({ isRegister }) {
   function handelClick(pos) {
     const eleActive = document.querySelector(".active");
     eleActive.classList.remove("active");
@@ -10,7 +10,7 @@ function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg fixed-top">
       <div className="container">
-        <a className="navbar-brand" href="index.html">
+        <a className="navbar-brand" href="./">
           <div className="row">
             <img
               src="./imgs/logo.png"
@@ -38,63 +38,80 @@ function NavBar() {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ml-lg-auto">
-            <li className="nav-item">
+          {isRegister ? (
+            <>
+              <ul className="navbar-nav ml-lg-auto">
+                <li className="nav-item"></li>
+              </ul>
               <Link
-                to="home"
+                to="register"
                 smooth={true}
                 className="nav-link smoothScroll active"
                 onClick={() => handelClick(0)}
               >
-                Accuiel
+                Inscription
               </Link>
-            </li>
+            </>
+          ) : (
+            <>
+              <ul className="navbar-nav ml-lg-auto">
+                <li className="nav-item">
+                  <Link
+                    to="home"
+                    smooth={true}
+                    className="nav-link smoothScroll active"
+                    onClick={() => handelClick(0)}
+                  >
+                    Accuiel
+                  </Link>
+                </li>
 
-            <li className="nav-item">
-              <Link
-                to="about"
-                smooth={true}
-                className="nav-link smoothScroll about"
-                onClick={() => handelClick(1)}
-              >
-                A propos
-              </Link>
-            </li>
+                <li className="nav-item">
+                  <Link
+                    to="about"
+                    smooth={true}
+                    className="nav-link smoothScroll about"
+                    onClick={() => handelClick(1)}
+                  >
+                    A propos
+                  </Link>
+                </li>
 
-            <li className="nav-item">
-              <Link
-                to="class"
-                smooth={true}
-                className="nav-link smoothScroll classes"
-                onClick={() => handelClick(2)}
-              >
-                Classes
-              </Link>
-            </li>
+                <li className="nav-item">
+                  <Link
+                    to="class"
+                    smooth={true}
+                    className="nav-link smoothScroll classes"
+                    onClick={() => handelClick(2)}
+                  >
+                    Classes
+                  </Link>
+                </li>
 
-            <li className="nav-item">
-              <Link
-                to="schedule"
-                smooth={true}
-                className="nav-link smoothScroll programme"
-                onClick={() => handelClick(3)}
-              >
-                Programme
-              </Link>
-            </li>
+                <li className="nav-item">
+                  <Link
+                    to="schedule"
+                    smooth={true}
+                    className="nav-link smoothScroll programme"
+                    onClick={() => handelClick(3)}
+                  >
+                    Programme
+                  </Link>
+                </li>
 
-            <li className="nav-item">
-              <Link
-                to="contact"
-                smooth={true}
-                className="nav-link smoothScroll contactl"
-                onClick={() => handelClick(4)}
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
-
+                <li className="nav-item">
+                  <Link
+                    to="contact"
+                    smooth={true}
+                    className="nav-link smoothScroll contactl"
+                    onClick={() => handelClick(4)}
+                  >
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </>
+          )}
           <ul className="social-icon ml-lg-3">
             <li>
               <Link

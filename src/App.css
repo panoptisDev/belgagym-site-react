@@ -6,6 +6,7 @@
 @import url("./styles/Contact.css");
 @import url("./styles/footer.css");
 @import url("./styles/slider.css");
+@import url("./styles/Register.css");
 @import url("./styles/about.css");
 
 /* /*---------------------------------------
@@ -78,7 +79,8 @@ a {
 
 .mt-3,
 .my-3 {
-  color: rgb(219, 252, 252);
+  color: rgb(255 255 255);
+  font-weight: 700;
 }
 
 th {
@@ -124,4 +126,15 @@ th {
   height: 100%;
   text-align: -webkit-center;
   margin-top: 13rem;
+}
+
+.Loader-form {
+  position: absolute;
+  margin-top: -20rem;
+  margin-left: 6rem;
+  display: none;
+}
+.EjLNS {
+  /* width: 0 !important;
+  height: 0 !important; */
 }

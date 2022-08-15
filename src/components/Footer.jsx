@@ -1,13 +1,17 @@
-function Footer() {
+function Footer({ isRegister }) {
+  let color = "";
+  {
+    isRegister ? (color = "rgb(23 24 25)") : (color = "#000");
+  }
   return (
-    <footer className="site-footer">
+    <footer className="site-footer" style={{ backgroundColor: `${color}` }}>
       <div className="container">
         <div className="row">
           <div className="ml-auto col-lg-4 col-md-5">
             <p className="copyright-text">
-              © 2022
+              <span style={{ fontFamily: "none" }}>©</span>2022
               <br />
-              <a href="#home">BELGAFORM</a> Tous les droits sont reservés!
+              <a href="/">BELGAFORM</a> Tous les droits sont reservés!
             </p>
             <p className="copyright-text">
               Développé par{" "}
