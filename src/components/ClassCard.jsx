@@ -1,8 +1,6 @@
 import React from "react";
-import { classeData } from "../data/data";
 
 const ClassCard = ({ img, nameClasse, desc }) => {
-  console.log("url(" + `${img}` + ")");
   return (
     <div className="item">
       <div className="work">

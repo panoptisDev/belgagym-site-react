@@ -57,14 +57,15 @@
 .table td,
 .table th {
   padding: 1rem;
+  vertical-align: middle;
 }
 .day {
   display: none;
   color: #11d7f1;
 }
 
-@media all and (max-width: 767px) {
-  .table {
+/* @media all and (max-width: 767px) { */
+/* .table {
     display: table;
     width: 100%;
   }
@@ -86,13 +87,12 @@
     flex-wrap: nowrap;
     flex-direction: column;
     width: 100%;
-  }
-  .table tbody td:before {
+  } */
+/* .table tbody td:before {
     color: #6c7a89;
-    /* padding-right: 10px; */
+
     content: attr(data-label);
-    /* flex-basis: 50%; */
+
     text-align: right;
-    /* height: 0rem;*/
   }
-}
+} */

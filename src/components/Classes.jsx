@@ -43,15 +43,15 @@ function Classes({ mouse }) {
         <div className="row">
           <div className="col-md-12 text-center">
             <h6 data-aos="fade-up">Notre programme</h6>
-            <h2 className="heading-section mb-5">Cours offerts</h2>
+            <h2 className="heading-section mb-5">COURS OFFERTS</h2>
           </div>
           <div className="col-md-12">
             <div className="featured-carousel owl-carousel">
               <Slider {...settings}>
-                {classeData.map((classe) => {
-                  console.log(classe.image);
+                {classeData.map((classe, index) => {
                   return (
                     <ClassCard
+                      key={index}
                       img={classe.image}
                       nameClasse={classe.nameClasse}
                       desc={classe.desc}

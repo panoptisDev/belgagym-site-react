@@ -11,13 +11,10 @@ function Schedule({ mouse }) {
         <div className="row">
           <div className="col-lg-12 col-12 text-center">
             <h6 data-aos="fade-up">Notre programme</h6>
-
-            <h2 className="text-white" data-aos="fade-up" data-aos-delay="200">
-              Horaires d'entraînement
-            </h2>
           </div>
           <Bounce bottom>
             <div className="col-lg-12 py-5 col-md-12 col-12">
+              <h2 className="text-white1 text-center">COURS COLLECTIFS</h2>
               <table
                 className="table table-bordered table-responsive schedule-table"
                 data-aos="fade-up"
@@ -28,194 +25,307 @@ function Schedule({ mouse }) {
                     <th>
                       <i className="fa fa-calendar"></i>
                     </th>
-                    <th>Lun</th>
-                    <th>Mar</th>
-                    <th>Mer</th>
-                    <th>Jeu</th>
-                    <th>Ven</th>
-                    <th>Sam</th>
+                    <th>
+                      LUNDI <br /> MIX
+                    </th>
+                    <th>
+                      MARDI <br />
+                      100% FEMMES
+                    </th>
+                    <th>
+                      MERCREDI <br />
+                      MIX
+                    </th>
+                    <th>
+                      JEUDI <br />
+                      100% FEMMES
+                    </th>
+                    <th>
+                      VENDREDI <br />
+                      100% FEMMES
+                    </th>
+                    <th>
+                      SAMEDI <br />
+                      MIX
+                    </th>
                   </tr>
                 </thead>
 
                 <tbody>
                   <tr>
                     <td>
-                      <small>15:00 - 18:00</small>
+                      <small>18H30-19H30</small>
                     </td>
                     <td>
-                      {" "}
                       <b className="day"> Lun</b>
+                      <strong>R.M.G</strong>
+                      <small
+                        style={{
+                          color: "#ffffff80",
+                          textTransform: "lowercase",
+                        }}
+                      >
+                        renforcement musculaire générale
+                      </small>
                     </td>
                     <td>
                       <b className="day"> Mar</b>
+
+                      <strong>C.A.F</strong>
+
+                      <small
+                        style={{
+                          color: "#ffffff80",
+                          textTransform: "lowercase",
+                        }}
+                      >
+                        cuisses abdos et fessiers
+                      </small>
                     </td>
                     <td>
                       <b className="day"> Mer</b>
+
+                      <strong> SPINNING</strong>
                     </td>
                     <td>
                       <b className="day"> Jeu</b>
+
+                      <strong>CARDIO BOXING</strong>
                     </td>
                     <td>
                       <b className="day"> Ven</b>
+
+                      <strong>SPINNING</strong>
                     </td>
                     <td>
                       <b className="day"> Sam</b>
-                      <strong>
-                        taekwondo <br /> kids 4ans:10ans
-                      </strong>
-                      <span>15:00 - 16:00 </span>
-                      <strong>10ans:16ans</strong>
-                      <span>16:00 - 17:00 </span>
-                      <strong>+16ans</strong>
-                      <span>17:00 - 17:30 </span>
+
+                      <strong> CIRCUIT TRAINING</strong>
                     </td>
                   </tr>
 
                   <tr>
                     <td>
-                      <small>18:00 - 22:00</small>
+                      <small>19H30-20H30</small>
                     </td>
                     <td>
                       <b className="day"> Lun</b>
-                      <strong>
-                        Karaté <br /> Kids
-                      </strong>
-                      <span>18:00 - 19:00 </span>
-                      <strong>Adulte</strong>
-                      <span>19:00 - 20:00 </span>
+                      <strong>SPINNING</strong>
                     </td>
                     <td>
                       <b className="day"> Mar</b>
-                      <strong>
-                        taekwondo <br /> kids 4ans:10ans
-                      </strong>
-                      <span>18:00 - 19:00 </span>
-                      <strong>10ans:16ans</strong>
-                      <span>19:00 - 20:00 </span>
-                      <strong>+16ans</strong>
-                      <span>20:00 - 21:30 </span>
+                      <strong>SPINNING</strong>
                     </td>
                     <td>
                       <b className="day"> Mer</b>
-                      <strong>
-                        Karaté <br /> Kids
-                      </strong>
-                      <span>18:00 - 19:00 </span>
-                      <strong>Adulte</strong>
-                      <span>19:00 - 20:00 </span>
+                      <strong>FIT COMBAT</strong>
                     </td>
                     <td>
                       <b className="day"> Jeu</b>
-                      <strong>
-                        taekwondo <br /> kids 4ans:10ans
-                      </strong>
-                      <span>18:00 - 19:00 </span>
-                      <strong>10ans:16ans</strong>
-                      <span>19:00 - 20:00 </span>
-                      <strong>+16ans</strong>
-                      <span>20:00 - 21:30 </span>
+                      <strong>T.A.F</strong>
+                      <small
+                        style={{
+                          color: "#ffffff80",
+                          textTransform: "lowercase",
+                        }}
+                      >
+                        Taille Abdos Fessiers
+                      </small>
                     </td>
                     <td>
                       <b className="day"> Ven</b>
-                      <strong>
-                        Karaté <br /> Kids
-                      </strong>
-                      <span>18:00 - 19:00 </span>
-                      <strong>Adulte</strong>
-                      <span>19:00 - 20:00 </span>
+                      <strong>BODY BARRE</strong>
                     </td>
                     <td>
                       <b className="day"> Sam</b>
+                      <strong>BODY BARRE</strong>
                     </td>
                   </tr>
 
                   <tr>
                     <td>
-                      <small>18:00 - 22:00</small>
+                      <small>20H30-21H00</small>
                     </td>
                     <td>
                       <b className="day"> Lun</b>
-                      <strong>Cours collectifs mix</strong>
-                      <span>18:00 - 21:00 </span>
+                      <strong>STRETCHING ABDOS</strong>
                     </td>
                     <td>
                       <b className="day"> Mar</b>
-                      <strong>Cours collectifs 100% femmes</strong>
-                      <span>18:30 - 21:00 </span>
+                      <strong>YOGA STRETCHING</strong>
                     </td>
                     <td>
                       <b className="day"> Mer</b>
-                      <strong>Cours collectifs mix</strong>
-                      <span>18:00 - 21:00 </span>
+                      <strong>BELGA GRIT</strong>
                     </td>
                     <td>
                       <b className="day">Jeu</b>
-                      <strong>Cours collectifs 100% femmes</strong>
-                      <span>18:30 - 21:00 </span>
+                      <strong>AEROBIC ZUMBA</strong>
                     </td>
                     <td>
                       <b className="day">Ven</b>
-                      <strong>Cours collectifs 100% femmes</strong>
-                      <span>18:30 - 21:00 </span>
+                      <strong>BELGA ATTACK</strong>
                     </td>
                     <td>
                       <b className="day">Sam</b>
-                      <strong>Cours collectifs mix</strong>
-                      <span>18:00 - 21:00 </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </Bounce>
+          <Bounce top>
+            <div className="col-lg-12 py-5 col-md-12 col-12">
+              <h2
+                className="text-white1 text-center "
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                PLANNING ARTS MARTIAUX
+              </h2>
+              <table
+                className="table table-bordered table-responsive schedule-table"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <thead className="thead-light">
+                  <tr>
+                    <th>
+                      <i className="fa fa-calendar"></i>
+                    </th>
+                    <th>JUDO</th>
+                    <th>TEAKWONDO</th>
+                    <th>KARATE</th>
+                    <th>KUNG-FU</th>
+                    <th>MMA</th>
+                    <th>KICK-BOXING</th>
+                    <th>GYMASTIQUE (max 12 ans)</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>
+                      <small>KIDS DE 4 à 10 ANS : 18H00-19H00</small>
+                    </td>
+                    <td>
+                      <b className="day"> JUDO</b>
+                      <strong>LUN-MER-VEN</strong>
+                    </td>
+                    <td>
+                      <b className="day"> TEAKWONDO</b>
+
+                      <strong>
+                        MAR-JEUDI-SAMEDI <br />
+                        SAM: DE 15H00-16H00
+                      </strong>
+                    </td>
+                    <td>
+                      <b className="day"> KARATE</b>
+
+                      <strong> LUN-MER-VEN</strong>
+                    </td>
+                    <td>
+                      <b className="day"> KUNG-FU </b>
+                    </td>
+                    <td>
+                      <b className="day"> MMA</b>
+                    </td>
+                    <td>
+                      <b className="day"> KICK-BOXING</b>
+
+                      <strong> LUN-MER-VEN</strong>
+                    </td>
+                    <td>
+                      <b className="day"> GYMASTIQUE (MAX 12 ANS)</b>
+
+                      <strong>
+                        MARDI : DE 18H30-19H30 <br />
+                        SAMEDI : DE 10H-11H00
+                      </strong>
                     </td>
                   </tr>
 
                   <tr>
                     <td>
-                      <small>18:00 - 22:00</small>
+                      <small>ADO DE 10 à 16 ANS : 19H00-20H00</small>
                     </td>
                     <td>
-                      <b className="day"> Lun</b>
+                      <b className="day"> JUDO</b>
+                      <strong>LUN-MER-VEN</strong>
+                    </td>
+                    <td>
+                      <b className="day"> TEAKWONDO</b>
                       <strong>
-                        Judo,kickboxing <br /> kids 4ans:10ans
+                        MAR-JEU-SAMEDI <br />
+                        SAM: DE 16H00-17H00
                       </strong>
-                      <span>18:00 - 19:00 </span>
-                      <strong>10ans:16ans</strong>
-                      <span>19:00 - 20:00 </span>
-                      <strong>+16ans</strong>
-                      <span>20:00 - 21:30 </span>
                     </td>
                     <td>
-                      <b className="day"> Mar</b>
-                      <strong>King fu</strong>
-                      <span>19:00 - 20:00 </span>
-                    </td>
-                    <td>
-                      <b className="day"> Mer</b>
+                      <b className="day"> KARATE</b>
                       <strong>
-                        Judo,kickboxing <br /> kids 4ans:10ans
+                        LUN-MER-VEN <br />
+                        DE 19H00--20H00
                       </strong>
-                      <span>18:00 - 19:00 </span>
-                      <strong>10ans:16ans</strong>
-                      <span>19:00 - 20:00 </span>
-                      <strong>+16ans</strong>
-                      <span>20:00 - 21:30 </span>
                     </td>
                     <td>
-                      <b className="day"> Jeu</b>
-                      <strong>King fu</strong>
-                      <span>19:00 - 20:00 </span>
+                      <b className="day"> KUNG-FU</b>
+
+                      <strong>MAR-JEUDI-SAMEDI</strong>
                     </td>
                     <td>
-                      <b className="day">Ven</b>
+                      <b className="day"> MMA</b>
+                    </td>
+                    <td>
+                      <b className="day"> KICK-BOXING </b>
+                      <strong>LUN-MER-VEN</strong>
+                    </td>
+                    <td>
+                      <b className="day"> GYMASTIQUE (MAX 12 ANS)</b>
                       <strong>
-                        Judo,kickboxing <br /> kids 4ans:10ans
+                        MARDI : DE 18H00-19H00 <br />
+                        SAMEDI : DE 11H-12H00
                       </strong>
-                      <span>18:00 - 19:00 </span>
-                      <strong>10ans:16ans</strong>
-                      <span>19:00 - 20:00 </span>
-                      <strong>+16ans</strong>
-                      <span>20:00 - 21:30 </span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <small>SENIOR + 16 ANS : 20H00-21H30</small>
                     </td>
                     <td>
-                      <b className="day">Sam</b>
-                      <strong>King fu</strong>
-                      <span>19:00 - 20:00 </span>
+                      <b className="day"> JUDO</b>
+                      <strong>LUN-MER-VEN</strong>
+                    </td>
+                    <td>
+                      <b className="day"> TEAKWONDO</b>
+                      <strong>
+                        MAR-JEU-SAMEDI <br />
+                        SAM : DE 17H00-18H00
+                      </strong>
+                    </td>
+                    <td>
+                      <b className="day"> KARATE</b>
+                      <strong>
+                        LUN-MER-VEN <br /> DE 19H00--20H00
+                      </strong>
+                    </td>
+                    <td>
+                      <b className="day">KUNG-FU </b>
+                    </td>
+                    <td>
+                      <b className="day">MMA</b>
+                      <strong>
+                        MAR-JEUDI-SAMEDI** <br />
+                        DE 19H00--21H00
+                      </strong>
+                    </td>
+                    <td>
+                      <b className="day">KICK-BOXING</b>
+                      <strong>LUN-MER-VEN</strong>
+                    </td>
+                    <td>
+                      <b className="day">GYMASTIQUE (MAX 12 ANS)</b>
                     </td>
                   </tr>
                 </tbody>

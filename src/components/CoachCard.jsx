@@ -1,6 +1,7 @@
 import React from "react";
 
-const CoachCard = ({ img, nameCoach, desc }) => {
+const CoachCard = ({ img, nameCoach, desc, prof }) => {
+  console.log(!prof);
   function handelClick(e) {
     //variables
     let isShowing = false;
@@ -41,17 +42,15 @@ const CoachCard = ({ img, nameCoach, desc }) => {
           <span className="left"></span>
           <span className="right"></span>
         </div>
-        <h2>
-          Coach
-          <small>
-            {"  "}
-            {nameCoach}
-          </small>
-        </h2>
+        <h2> {nameCoach}</h2>
+        {prof == "" && <b>{desc}</b>}
+        {prof == "no" && <b>Fitness</b>}
       </div>
-      <div className="card-flap flap1">
-        <div className="card-description">{desc}</div>
-      </div>
+      {prof == "no" && (
+        <div className="card-flap flap1">
+          <div className="card-description">{desc}</div>
+        </div>
+      )}
     </div>
   );
 };

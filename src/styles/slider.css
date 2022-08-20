@@ -1,89 +1,9 @@
-.slideshow {
-  width: 500px;
-  margin: 0 auto;
-  overflow: hidden;
-  border: solid 1px rgb(0, 0, 0);
-  margin-bottom: 20px;
-}
-
-.slideshow-container {
-  width: 2500px;
-  font-size: 0;
-  transition: 1s ease;
-  height: 500px;
-}
-
-.slideshow-container:hover {
-  animation-play-state: paused;
-}
-
-.slideshow-container img {
-  width: 500px;
-  display: inline-block;
-  font-size: 16px;
-  text-align: center;
-  margin-right: -28px;
-}
-
-.slide {
-  animation: slide 24s ease infinite;
-}
-
-@keyframes slide {
-  0% {
-    transform: translateX(0%);
-  }
-
-  12.5% {
-    transform: translateX(0%);
-  }
-
-  25% {
-    transform: translateX(-25%);
-  }
-
-  37.5% {
-    transform: translateX(-25%);
-  }
-
-  50% {
-    transform: translateX(-50%);
-  }
-
-  62.5% {
-    transform: translateX(-50%);
-  }
-
-  75% {
-    transform: translateX(-75%);
-  }
-
-  87.5% {
-    transform: translateX(-75%);
-  }
-
-  99% {
-    transform: translateX(-75%);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.p {
-  margin-top: 140px;
-  text-align: center;
-}
-
 .about2 {
   margin-top: 3rem;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 891px) {
   .slideshow {
-    height: 450px;
-    width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 5rem !important;
   }
 }

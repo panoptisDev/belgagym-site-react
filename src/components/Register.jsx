@@ -10,7 +10,7 @@ const Register = () => {
     colors: ["#0066b7", "#0066b7", "#0066b7"],
   };
 
-  const isSuccess = true;
+  let isSuccess = true;
   const form = useRef();
   const sendEmail = (e) => {
     document.querySelector(".Loader-form").style.display = "block";
@@ -51,9 +51,8 @@ const Register = () => {
       <div
         className="container"
         style={{
-          paddingTop: "1rem",
           paddingBottom: "5rem",
-          paddingTop: "10rem",
+          paddingTop: "11rem",
         }}
       >
         <div className="row" id="register">
@@ -69,11 +68,12 @@ const Register = () => {
               style={{ display: "flex", alignItems: "center" }}
             >
               <img
-                src="./imgs/logo.png"
-                alt="logo"
-                style={{ width: "65px", height: "62px" }}
+                src="./imgs/logofinal.png"
+                style={{
+                  width: "238px",
+                  height: "35px",
+                }}
               />
-              <h1 className="logo__text">elgaform</h1>
             </div>
 
             <div className="thumbnail__links">
@@ -166,12 +166,9 @@ const Register = () => {
                   <option value="taekwondo">taekwondo</option>
                   <option value="King fu">King fu</option>
                   <option value="kickboxing">kickboxing</option>
-                  <option value="Cours collectifs mix">
-                    Cours collectifs mix
-                  </option>
-                  <option value="cours collectifs 100% femmes">
-                    Cours collectifs 100% femmes
-                  </option>
+                  <option value="MMA">MMA</option>
+                  <option value="GYMASTIQUE">GYMASTIQUE (MAX 12 ANS)</option>
+                  <option value="fitness">Fitness</option>
                 </select>
               </div>
               <div className="form-group">

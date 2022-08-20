@@ -93,7 +93,7 @@ th {
 
 .heading-section {
   font-size: 28px;
-  color: aliceblue;
+  color: rgb(255, 255, 255);
 }
 .img {
   background-size: cover;
@@ -134,7 +134,6 @@ th {
   margin-left: 6rem;
   display: none;
 }
-.EjLNS {
-  /* width: 0 !important;
-  height: 0 !important; */
+.text-white1 {
+  color: rgba(255, 255, 255, 0.745);
 }

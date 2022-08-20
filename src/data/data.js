@@ -1,29 +1,57 @@
 export const coachesData = [
   {
     img: "./imgs/coach1.png ",
-    nameCoach: "Khadija",
-    desc: "coaching personnel, cours collectifs 100 % femmes et mix, accompagnement sur le plateau de musculation et spinning",
+    nameCoach: "Coach Khadija",
+    prof: "no",
+    desc: "Coach douée avec certificats nationaux et une expérience de plusieurs années Khadija à aidé et changé la vie de plusieurs personnes Que ce soit pour se muscler, perdre du poids ou se relaxer. Elle dirige des cours collectifs 100% femmes et mixte: Spinning, Coaching personnel, Renforcement, Cardio et d'autres..",
   },
   {
     img: "./imgs/coach4.png ",
-    nameCoach: "Youssef",
-    desc: "accompagnement sur plateau de musculation, coaching personnel de boxe,kick boxing et Muay Thai",
+    nameCoach: "Coach Youssef",
+    prof: "no",
+    desc: "Un professeur de kickboxing qui possède plus que 10 certificats en KICKBOXING, MUAY THAI, BOXE ANGLAISE une expérience de 15 ans qui inclus des stages nationaux / internationaux et des compétitions. C'est un entraîneur de haute gamme qui a entrainé plusieurs champions, qui vous accompagnera dans vos entraînements et votre preparation physique.",
   },
   {
     img: "./imgs/coach2.png",
-    nameCoach: "Hamza",
-    desc: "cours collectifs mix, spinning, coaching personnel et accompagnement sur plateau de musculation",
+    prof: "no",
+    nameCoach: "Coach Hamza",
+    desc: "Titulaire d'un certificat de coaching personnel international de l'organisation suédoise de fitness avec une expérience de plus de 5 ans dans le domaine. il mène une diversité des cours allant de la souplesse aux cours cardio en passant par des cours de renforcement HAMZA est aussi un judoka.",
   },
   {
     img: "./imgs/coach3.png",
-    nameCoach: "Zaid",
-    desc: "coaching personnel, accompagnement sur plateaude musculation",
+    nameCoach: "Coach Zaid",
+    prof: "no",
+    desc: "ZAID est un champion du MAROC de judo et de bodybulding Une expérience riche de 10 ans dans ces deux domaines qu'il mettra a votre service un coach personnel certifié qui vous accompagne dés le début jusqu'à l'accomplissement de vos objectifs.",
+  },
+  {
+    img: "./imgs/prof1.png",
+    nameCoach: "Professeur Ahmed ",
+    desc: " judo",
+    prof: "",
+  },
+  {
+    img: "./imgs/prof2.png",
+    nameCoach: "Professeur youssef",
+    desc: "kickboxing, Muay thaï et boxe anglaise",
+    prof: "",
+  },
+  {
+    img: "./imgs/prof3.png",
+    nameCoach: "Professeur Anass ",
+    desc: "Taekwondo",
+    prof: "",
+  },
+  {
+    img: "./imgs/prof4.png",
+    nameCoach: "Professeur Kamilia",
+    desc: "gymnastique",
+    prof: "",
   },
 ];
 
 export const classeData = [
   {
-    image: "./imgs/judo.png",
+    image: "./imgs/judo.png ",
     nameClasse: "judo",
     desc: "Au judo, vous utilisez l'énergie de votre adversair à votre avantage",
   },

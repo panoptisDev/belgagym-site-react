@@ -13,15 +13,12 @@ function NavBar({ isRegister }) {
         <a className="navbar-brand" href="./">
           <div className="row">
             <img
-              src="./imgs/logo.png"
+              src="./imgs/logofinal.png"
               style={{
-                width: "46px",
-                height: "41px",
-                marginTop: "-5px",
-                marginRight: "-3.5px",
+                width: "238px",
+                height: "35px",
               }}
             />
-            ELGAFORM
           </div>
         </a>
 

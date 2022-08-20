@@ -24,11 +24,11 @@ function Footer({ isRegister }) {
           <div className="d-flex justify-content-center mx-auto col-lg-5 col-md-7 col-12">
             <p className="mr-4">
               <i className="fa fa-envelope-o mr-1"></i>
-              <a href="#">hello@company.co</a>
+              <a href="#">belgaform-1984@hotmail.com</a>
             </p>
 
             <p>
-              <i className="fa fa-phone mr-1"></i> 010-020-0840
+              <i className="fa fa-phone mr-1"></i> 05 37 53 39 53
             </p>
           </div>
         </div>

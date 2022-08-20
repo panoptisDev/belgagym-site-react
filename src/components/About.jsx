@@ -1,9 +1,9 @@
 import { coachesData } from "../data/data";
 import Fade from "react-reveal/Fade";
-import Roll from "react-reveal/Roll";
+
 import Zoom from "react-reveal/Zoom";
 
-import ImgSlider from "./ImgSlider";
+import Slider from "react-slick";
 import CoachCard from "./CoachCard";
 
 const SalleImg2 = "./imgs/im1.png";
@@ -11,8 +11,20 @@ const SalleImg3 = "./imgs/im2.png";
 const SalleImg4 = "./imgs/im3.png";
 const SalleImg5 = "./imgs/im4.png";
 const SalleImg6 = "./imgs/unnamed.png";
+const SalleImg7 = "./imgs/IMG5-.png";
 
 function About({ mouse }) {
+  var settings = {
+    arrows: false,
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    responsive: [],
+  };
   return (
     <>
       <section className="about section" id="about" onMouseEnter={mouse}>
@@ -26,28 +38,22 @@ function About({ mouse }) {
                   data-aos-delay="300"
                   style={{ marginLeft: "2%" }}
                 >
-                  Bonjour, nous sommes BELGAFORM
+                  NOS COACHES
                 </h2>
-
-                <p data-aos="fade-up" data-aos-delay="400">
-                  Nos coachs vous attendent pour vous soutenir dans votre
-                  démarche de bien-être ! Organisez votre Bilan de Forme gratuit
-                  et profitez de notre offre du moment ! Essayez notre séance
-                  d’entraînement de 30 minutes, une combinaison de Renforcement
-                  Musculaire et de cardio. Nous sommes impatients de vous
-                  rencontrer.
-                </p>
               </div>
             </Fade>
           </div>
           <Zoom left>
             <div className="cards container">
-              {coachesData.map((coach) => {
+              {coachesData.map((coach, index) => {
+                console.log(coach.prof);
                 return (
                   <CoachCard
+                    key={index}
                     img={coach.img}
                     nameCoach={coach.nameCoach}
                     desc={coach.desc}
+                    prof={coach.prof}
                   />
                 );
               })}
@@ -65,15 +71,15 @@ function About({ mouse }) {
           }}
         >
           <Zoom right>
-            <div className="col">
-              <ImgSlider
-                img2={SalleImg2}
-                img3={SalleImg3}
-                img4={SalleImg4}
-                img5={SalleImg5}
-                im6={SalleImg6}
-                im7={SalleImg2}
-              />
+            <div className="col-lg-6 slideshow">
+              <Slider {...settings}>
+                <img src={SalleImg2} alt="png" style={{ height: "600px" }} />
+                <img src={SalleImg3} alt="png" style={{ height: "600px" }} />
+                <img src={SalleImg4} alt="png" style={{ height: "600px" }} />
+                <img src={SalleImg5} alt="png" style={{ height: "600px" }} />
+                <img src={SalleImg6} alt="png" style={{ height: "600px" }} />
+                <img src={SalleImg7} alt="png" style={{ height: "600px" }} />
+              </Slider>
             </div>
           </Zoom>
           <Zoom left>
@@ -83,12 +89,14 @@ function About({ mouse }) {
             >
               <h1 className="heading-section">Notre club </h1>
               <p>
-                te propose tous les haltères et toutes les machines pour passer
-                du mini au maxi effort. Que tu choisisses de te muscler plus
-                spécifiquement les fessiers, les quadriceps, les dorsaux ou les
-                abdos… nos machines guidées sont à ta disposition, ainsi que la
-                zone de poids libre. Tu l’as bien compris, ici tu peux te
-                muscler comme tu veux et aussi où tu veux.{" "}
+                Que vous souhaitiez effectuer un renforcement musculaire et
+                gagner en tonus pour vous sentir mieux et accessoirement
+                sculpter votre silhouette, que vous vouliez plus simplement
+                entretenir votre cardio et vous défouler en vous dépensant au
+                rythme endiablé de la Zumba, ou que vous projetiez de travailler
+                sur votre souplesse et sur la paix intérieure en faisant des
+                exercices de relaxation, vous trouverez tout ce qu'il vous faut
+                en vous adressant aux salles de sport BELGAFORM
               </p>
             </div>
           </Zoom>

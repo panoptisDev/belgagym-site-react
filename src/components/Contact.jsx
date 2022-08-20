@@ -21,7 +21,7 @@ const initialState = {
 
 function Contact({ mouse }) {
   const form = useRef();
-  const isSuccess = true;
+  let isSuccess = true;
   const loaderProps = {
     loading: true,
     size: 150,
@@ -200,7 +200,7 @@ function Contact({ mouse }) {
                 data-aos-delay="900"
               >
                 <iframe
-                  src="https://maps.google.com/maps?q=%20avenue%20Moulay%20Youssef%20-%20cit%C3%A9%20royale%20SALA%20AL%20JADIDA,%20Sal%C3%A9,%20Morocco&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  src="https://maps.google.com/maps?q=belgaform%20avenue%20Moulay%20Youssef%20-%20cit%C3%A9%20royale%20SALA%20AL%20JADIDA,%20Sal%C3%A9,%20Morocco&t=&z=13&ie=UTF8&iwloc=&output=embed"
                   width="1970"
                   height="310"
                   frameBorder="0"
