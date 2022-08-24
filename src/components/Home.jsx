@@ -1,5 +1,6 @@
 import ReactRotatingText from "react-rotating-text";
 import Fade from "react-reveal/Fade";
+import { motion } from "framer-motion";
 
 function Home({ mouse }) {
   return (
@@ -27,10 +28,10 @@ function Home({ mouse }) {
                 </h6>
 
                 <img
+                  className="img-fluid"
                   src="./imgs/logoB.png"
                   style={{
-                    width: "400px",
-                    height: "240px",
+                    width: "350px",
                     zIndex: "-1",
                   }}
                 />
@@ -58,23 +59,37 @@ function Home({ mouse }) {
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-8 col-md-10 mx-auto col-12 text-center">
-              <a
-                href="#feature"
-                className="btn custom-btn mt-3"
-                data-aos="fade-up"
-                data-aos-delay="600"
+            <div
+              className="col-lg-8 col-md-10 mx-auto col-12 text-center flex-grow"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                flexWrap: "wrap",
+              }}
+            >
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
-                Get started
-              </a>
+                <a
+                  href="#about"
+                  className="btn custom-btn mt-3"
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                >
+                  en savoir plus
+                </a>
+              </motion.div>
 
               <a
-                href="#about"
+                href="#feature"
                 className="btn custom-btn bordered mt-3"
                 data-aos="fade-up"
                 data-aos-delay="700"
               >
-                learn more
+                Commencer
               </a>
             </div>
           </div>

@@ -25,7 +25,7 @@ function Classes({ mouse }) {
         },
       },
       {
-        breakpoint: 500,
+        breakpoint: 620,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

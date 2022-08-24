@@ -2,6 +2,7 @@ import Fade from "react-reveal/Fade";
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { GooeyCircleLoader } from "react-loaders-kit";
+import { motion } from "framer-motion";
 
 // import { SMTPClient } from "emailjs";
 
@@ -139,15 +140,21 @@ function Contact({ mouse }) {
                     handelChange(e);
                   }}
                 ></textarea>
-
-                <button
-                  type="submit"
-                  className="form-control"
-                  id="submit-button"
-                  name="submit"
+                <motion.div
+                  whileHover={{ scale: 1.01 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 >
-                  Envoyer
-                </button>
+                  <button
+                    type="submit"
+                    className="form-control"
+                    id="submit-button"
+                    name="submit"
+                  >
+                    Envoyer
+                  </button>
+                </motion.div>
+
                 <div
                   className="alert alert-success alert-dismissible fade show"
                   role="alert"

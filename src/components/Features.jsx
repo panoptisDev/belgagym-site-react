@@ -1,4 +1,5 @@
 import Fade from "react-reveal/Fade";
+import { motion } from "framer-motion";
 
 function Features() {
   return (
@@ -14,14 +15,18 @@ function Features() {
               <h6 className="mb-4 text-white" data-aos="fade-up">
                 Rejoignez nous maintenant
               </h6>
-
-              <a
-                href="/register"
-                className="btn custom-btn bg-color mt-3"
-                data-aos="fade-up"
+              <motion.div
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
-                Devenez membre aujourd'hui
-              </a>
+                <a
+                  href="/register"
+                  className="btn custom-btn bg-color mt-3"
+                  data-aos="fade-up"
+                >
+                  Devenez membre aujourd'hui
+                </a>
+              </motion.div>
             </div>
           </Fade>
           <Fade bottom>

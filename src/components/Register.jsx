@@ -1,6 +1,7 @@
 import React from "react";
 import emailjs from "@emailjs/browser";
 import { GooeyCircleLoader } from "react-loaders-kit";
+import { motion } from "framer-motion";
 import { useRef } from "react";
 const Register = () => {
   const loaderProps = {
@@ -185,11 +186,21 @@ const Register = () => {
               <div className="m-t-lg">
                 <ul className="list-inline2" style={{ listStyle: "none" }}>
                   <li>
-                    <input
-                      className="btn btn--form"
-                      type="submit"
-                      value="Register"
-                    />
+                    <motion.div
+                      whileHover={{ scale: 1.01 }}
+                      whileTap={{ scale: 0.9 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 10,
+                      }}
+                    >
+                      <input
+                        className="btn btn--form"
+                        type="submit"
+                        value="Register"
+                      />
+                    </motion.div>
                   </li>
                   <li>
                     <a className="signup__link" href="/">

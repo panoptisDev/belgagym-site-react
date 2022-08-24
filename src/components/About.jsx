@@ -2,6 +2,7 @@ import { coachesData } from "../data/data";
 import Fade from "react-reveal/Fade";
 
 import Zoom from "react-reveal/Zoom";
+import { motion } from "framer-motion";
 
 import Slider from "react-slick";
 import CoachCard from "./CoachCard";

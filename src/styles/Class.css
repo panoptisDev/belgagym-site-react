@@ -136,9 +136,15 @@
   left: -1px;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 620px) {
   .work .img {
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  .slick-slide div {
+    margin-right: 0 !important;
+  }
+  .slick-next {
+    right: 2px;
   }
 }

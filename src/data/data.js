@@ -57,7 +57,7 @@ export const classeData = [
   },
   {
     image: "./imgs/kunfu.png",
-    nameClasse: "Kun fu",
+    nameClasse: "Kung fu",
     desc: "Apprenez plus de façons de préserver que de détruire car la vie est précieuse.",
   },
   {
